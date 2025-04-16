@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rearranged Login Form</title>
+    <link rel="stylesheet" href="Style.css"> 
+</head>
+<body>
+
+    <h2>USER REGISTRATION</h2>
+
+    <form>
+        <!-- Personal Info Section -->
+        <fieldset>
+            <legend>Personal Info</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname"><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="text" id="email" name="email"><br><br>
+
+            <label for="password">Create Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+        </fieldset>
+
+        <!-- Gender Section -->
+        <fieldset>
+            <legend>Gender</legend>
+            <label><input type="radio" name="gender" value="Male"> Male</label><br>
+            <label><input type="radio" name="gender" value="Female"> Female</label><br>
+        </fieldset>
+
+        <!-- Interests Section -->
+        <fieldset>
+            <legend>Select Your Interests</legend>
+
+            <label><input type="checkbox" name="interests" value="Sports"> Sports</label><br>
+            <label><input type="checkbox" name="interests" value="Studying"> Studying</label><br>
+            <label><input type="checkbox" name="interests" value="Coding"> Coding</label><br>
+            <label><input type="checkbox" name="interests" value="Watching movies"> Watching Movies</label><br>
+        </fieldset>
+
+        <!-- Country & Profile Section -->
+        <fieldset>
+            <legend>Additional Info</legend>
+
+            <label for="country">Country:</label><br>
+            <select id="country" name="country">
+                <option value="">--Select Country--</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Rwanda">Rwanda</option>
+            </select><br><br>
+
+            <label for="profilepic">Upload Profile Picture:</label><br>
+            <input type="file" id="profilepic" name="profilepic" accept="image/*"><br>
+        </fieldset>
+
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
